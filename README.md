@@ -13,6 +13,7 @@ Neste sistema é possivel encontrar as seguintes opções:
  - Trâsferencia
  - Consulta
  - Pagamentos
+ - Alterar PIN
 
 
 ## Como utilizar ##
