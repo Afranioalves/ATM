@@ -1,9 +1,12 @@
 // #include <conio.c>
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 #define  PIN  1234
 
 int main(){
+	setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "");
 //	textcolor(3);
 	int codigo, operacao;
 	float money = 100000;
@@ -36,7 +39,7 @@ int main(){
 		printf(" => 2) TRANSFERENCIA \n");
 		printf("\n");
 		printf(" => 3) PAGAMENTOS                            ");
-		printf(" => 4) CONSULTA \n => 5) Alterar PIN");
+		printf(" => 4) CONSULTA \n => 5) Alterar PIN\n\n");
 		scanf("%i", &operacao);
 		system("cls");
 		
