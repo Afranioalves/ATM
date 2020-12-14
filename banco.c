@@ -13,8 +13,8 @@ int main(){
 	printf("=================###=======#########==========####=====####==========\n");
 	printf("================#####======#########===========###====###============\n");
 	printf("===============#######========##===============###===###=============\n");
-	printf("===============##===##========##===============####=###=============\n");
-	printf("===============#######========##===============########=============\n");
+	printf("===============##===##========##===============####=###==============\n");
+	printf("===============#######========##===============########==============\n");
 	printf("===============##===##========##===============####===###============\n");
 	printf("===============##===##========##===============####===###============\n");
 	printf("\n");
@@ -35,7 +35,7 @@ int main(){
 		printf(" => 1) LEVANTAMENTO                        ");
 		printf(" => 2) TRANSFERENCIA \n");
 		printf("\n");
-		printf(" => 3) DEPOSITO                            ");
+		printf(" => 3) PAGAMENTOS                            ");
 		printf(" => 4) CONSULTA \n");
 		scanf("%i", &operacao);
 		system("cls");
@@ -68,11 +68,33 @@ int main(){
 					printf(" => 1) CONSULTAR SALDO DA CONTA\n");
 					printf(" => 2) CONSULTAR IBAN	\n\n");
 					printf(" => 0) CANCELAR \t\t\t\t\t\t\t => 3) OUTRAS OPÇÕES\n");
+						int opt;
+						scanf("%d",&opt); //variavel que vai pegar a opção selecionada.
+					system("cls");
+					switch (opt)
+					{
+						case 1:
+							printf("=====================================================================\n");
+							printf("=====================================================================\n");
+							printf("=========================== CONSULTA SALDO DE CONTA =================\n");
+							printf("=====================================================================\n");
+							printf("=====================================================================\n");
+							printf("\n");
+							printf("\n");
+							printf(" => 1) CONSULTAR NO ECRÃ\n\n => 2) PAPEL");
+							printf("\n");
+						break;
+						
+						default :
+						printf("OPÇÃO NÃO ENCONTRADA :(");
+						system("exit");
+							break;
+					}
 			break;
 			
 			default:
-				print("OPÇÃO NÃO ENCONTRADA :(");
-				system('exit');
+				printf("OPÇÃO NÃO ENCONTRADA :(");
+				system("exit");
 				break;
 		}
 	}
