@@ -35,11 +35,11 @@ int main(){
 		printf("=====================================================================\n");
 		printf("\n");
 		printf("\n");
-		printf(" => 1) LEVANTAMENTO                        ");
+		printf(" => 1) LEVANTAMENTO   \t\t\t");
 		printf(" => 2) TRÂNSFERENCIA \n");
 		printf("\n");
-		printf(" => 3) PAGAMENTOS                            ");
-		printf(" => 4) CONSULTA \n => 5) Alterar PIN\n\n");
+		printf(" => 3) PAGAMENTOS      \t\t\t");
+		printf(" => 4) CONSULTA\n\n => 5) Alterar PIN\n\n");
 		scanf("%i", &operacao);
 		system("cls");
 		
