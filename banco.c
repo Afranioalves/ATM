@@ -36,7 +36,7 @@ int main(){
 		printf(" => 2) TRANSFERENCIA \n");
 		printf("\n");
 		printf(" => 3) PAGAMENTOS                            ");
-		printf(" => 4) CONSULTA \n");
+		printf(" => 4) CONSULTA \n => 5) Alterar PIN");
 		scanf("%i", &operacao);
 		system("cls");
 		
