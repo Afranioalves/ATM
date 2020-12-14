@@ -2,17 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-#define  PIN  1234
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	setlocale(LC_ALL, "");
 //	textcolor(3);
+	int PIN = 1234;
 	int codigo, operacao;
 	float money = 100000;
 	float saque;
 	
-
+	while ("true")
+	{
+		
 	printf("=================###=======#########==========####=====####==========\n");
 	printf("================#####======#########===========###====###============\n");
 	printf("===============#######========##===============###===###=============\n");
@@ -27,6 +29,7 @@ int main(){
 	system("cls");
 	if(PIN != codigo){
 		printf("========================= PIN ERRADO ===============================\n");
+		system("exit");
 	}else{
 		printf("=====================================================================\n");
 		printf("=====================================================================\n");
@@ -88,10 +91,22 @@ int main(){
 							printf("\n");
 						break;
 						
+						case 5:
+							printf("=====================================================================\n");
+							printf("=====================================================================\n");
+							printf("============================== ALTERAR PIN ==========================\n");
+							printf("=====================================================================\n");
+							printf("=====================================================================\n");
+							printf("\n");
+							printf("\n");
+							printf("Insira o seu novo PIN: ");
+								scanf("%d",&PIN);
+							printf("\n\t\t\t\t\tPIN Alterado com Sucesso !");
+						break;
 						default :
 						printf("OPÇÃO NÃO ENCONTRADA :(");
 						system("exit");
-							break;
+					
 					}
 			break;
 			
@@ -103,5 +118,7 @@ int main(){
 	}
 	
 	
+
+	}
 	
 }
