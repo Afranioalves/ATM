@@ -1,9 +1,10 @@
-#include <conio.c>
+// #include <conio.c>
 #include <stdio.h>
+#include <stdlib.h>
 #define  PIN  1234
 
-main(){
-	textcolor(3);
+int main(){
+//	textcolor(3);
 	int codigo, operacao;
 	float money = 100000;
 	float saque;
