@@ -1,17 +1,17 @@
-// #include <conio.c>
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
-	setlocale(LC_ALL, "");
-//	textcolor(3);
+
+// variables
 	int PIN = 1234;
 	int codigo, operacao;
 	float money = 100000;
 	float saque;
-	
+
+//Init a loop para que não ficarmos toda hora ter que reiniciar o terminal	
 	while ("true")
 	{
 		
