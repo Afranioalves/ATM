@@ -26,10 +26,11 @@ int main(){
 	printf("\n");
 	printf("DIGITE O SEU PIN:");
 	scanf("%i", &codigo);
-	system("cls");
+	system("clear");
 	if(PIN != codigo){
 		printf("========================= PIN ERRADO ===============================\n");
-		system("exit");
+		// system("clear")
+		// system("exit");
 	}else{
 		printf("=====================================================================\n");
 		printf("=====================================================================\n");
@@ -44,7 +45,7 @@ int main(){
 		printf(" => 3) PAGAMENTOS      \t\t\t");
 		printf(" => 4) CONSULTA\n\n => 5) Alterar PIN\n\n");
 		scanf("%i", &operacao);
-		system("cls");
+		system("clear");
 		
 		switch(operacao){
 			
@@ -71,6 +72,8 @@ int main(){
 					printf("\n");
 					printf("\n");
 			break;
+			
+			// Consultas
 			case 4:
 					printf("=====================================================================\n");
 					printf("=====================================================================\n");
@@ -84,7 +87,7 @@ int main(){
 					printf(" => 0) CANCELAR \t\t\t\t\t\t\t => 3) OUTRAS OPÇÕES\n");
 						int opt;
 						scanf("%d",&opt); //variavel que vai pegar a opção selecionada.
-					system("cls");
+					system("clear");
 					switch (opt)
 					{
 						case 1:
@@ -99,7 +102,16 @@ int main(){
 							printf("\n");
 						break;
 						
-						case 5:
+						
+						default :
+						printf("OPÇÃO NÃO ENCONTRADA :( test");
+						system("exit");
+					
+					}
+			break;
+			
+			// Alterar pin
+			case 5:
 							printf("=====================================================================\n");
 							printf("=====================================================================\n");
 							printf("============================== ALTERAR PIN ==========================\n");
@@ -109,19 +121,12 @@ int main(){
 							printf("\n");
 							printf("Insira o seu novo PIN: ");
 								scanf("%d",&PIN);
-							printf("\n\t\t\t\t\tPIN Alterado com Sucesso !");
+							printf("\n\t\t\t\tPIN Alterado com Sucesso !");
+							system("exit");
 						break;
-						default :
-						printf("OPÇÃO NÃO ENCONTRADA :(");
-						system("exit");
-					
-					}
-			break;
-			
-			default:
-				printf("OPÇÃO NÃO ENCONTRADA :(");
-				system("exit");
-				break;
+		default:
+			printf("OPÇÃO NÃO ENCONTRADA :(");
+		break;
 		}
 	}
 	
