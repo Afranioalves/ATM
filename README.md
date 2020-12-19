@@ -2,7 +2,7 @@
 ![](./images/iconATM.png)
 
 ## Descrição ##
- - Simulação de um sistema de ATM dos Bancos feito em C.
+ - Simulação de um sistema de ATM dos Bancos feito em Linguagem C.
 
 ## Opçãos Validas ##
 ![](./images/options.png)
