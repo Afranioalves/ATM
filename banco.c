@@ -28,9 +28,8 @@ int main(){
 	scanf("%i", &codigo);
 	system("clear");
 	if(PIN != codigo){
-		printf("========================= PIN ERRADO ===============================\n");
-		// system("clear")
-		// system("exit");
+		printf("\n\n========================= PIN ERRADO ===============================\n\n\n");
+
 	}else{
 		printf("=====================================================================\n");
 		printf("=====================================================================\n");
@@ -121,7 +120,7 @@ int main(){
 							printf("\n");
 							printf("Insira o seu novo PIN: ");
 								scanf("%d",&PIN);
-							printf("\n\t\t\t\tPIN Alterado com Sucesso !");
+							printf("\n\n\t\tPIN Alterado com Sucesso !\n\n");
 							system("exit");
 						break;
 		default:
